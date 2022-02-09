@@ -1,0 +1,22 @@
+@mixin bottom-heading {
+  width: 85%;
+  background-color: black;
+  color: #ffffff;
+  position: absolute;
+  bottom: 5%;
+  padding: 5px 0 5px 10px;
+}
+
+@mixin cards {
+  border-radius: 10px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 360px;
+  max-width: 100%;
+  // width: 360px;
+}
+
+@mixin gradient {
+  background: linear-gradient(to right, rgba($sea-green,0.95), rgba(#b8e994,0.95));
+}

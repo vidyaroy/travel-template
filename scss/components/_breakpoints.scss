@@ -1,0 +1,31 @@
+$xs: 320px;
+$small: 500px;
+$medium: 720px;
+$large: 920px;
+$xl: 1224px;
+
+$max-width: $xl;
+
+@mixin max-width {
+  @include breakpoint($max-width) {
+    @content;
+  }
+}
+
+@mixin small-tablet {
+  @media only screen and (max-width: $small) {
+    @content;
+  }
+}
+
+@mixin medium-tablet {
+  @media only screen and (max-width: $medium) {
+    @content;
+  }
+}
+
+@mixin large-tablet {
+  @media only screen and (max-width: $large) {
+    @content;
+  }
+}

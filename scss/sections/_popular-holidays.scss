@@ -1,0 +1,46 @@
+#popular-holiday {
+  background-image: url(/images/popular-holiday/back2.jpg);
+
+  .popular {
+    h2 {
+      color: $brand-color;
+    }
+    .popular__contents {
+
+      .popular__img {
+        position: relative;
+        // transition: transform 0.3s;
+        transform: perspective(900px) rotateY(-10deg);
+
+        // border-top: 50px solid transparent;
+        // border-right: 100px solid;
+        // border-bottom: 50px solid transparent;
+
+        @include medium-tablet {
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+
+        img {
+          width: 100%;
+          height: 450px;
+          object-fit: cover;
+
+          @include medium-tablet {
+            padding: 0 20px;
+          }
+        }
+
+        .image__content {
+          position: absolute;
+          bottom: 20px;
+          left: 10%;
+          color: white;
+          font-weight: 600;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+

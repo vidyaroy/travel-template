@@ -1,0 +1,25 @@
+.carousel-item {
+
+  img {
+    position: relative;
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+  
+    h5 {
+      font-size: 50px;
+      color: $brand-color;
+      @include medium-tablet {
+        font-size: 30px;
+      }
+    }
+    h1 {
+      font-weight: 800;
+      @include medium-tablet {
+        font-size: 40px;
+      }
+    }
+  }
+  
+}

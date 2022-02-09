@@ -1,0 +1,24 @@
+.carousel slide {
+  position: relative;
+}
+.rounded-circle {
+  position: absolute;
+  top: 50%;
+  background-color: $brand-color;
+  height: 45px;
+  width: 45px;
+}
+
+.carousel-control-prev {
+  @include small-tablet {
+    left: 0;
+  }
+  left: 80px;
+}
+
+.carousel-control-next {
+  @include small-tablet {
+    right: 0;
+  }
+  right: 80px;
+}
